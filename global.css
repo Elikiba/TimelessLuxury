@@ -1,0 +1,96 @@
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #020335 80%, gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.8s var(--ease-out), visibility 0.8s var(--ease-out);
+}
+
+.preloader-logo {
+    font-family: 'Marcellus', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: transparent;
+    background: linear-gradient(90deg, #FFDF00, #faedce, var(--gold));
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 2s linear infinite;
+}
+
+/* Scroll Progress */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--gold);
+    z-index: 10;
+    transition: width 0.1s ease;
+}
+
+/* Scroll-to-Top Button */
+#scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--gold);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: visible;
+    transition: var(--transition);
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#scroll-to-top:hover {
+    background: var(--dark-gold);
+    transform: translateY(-3px) scale(1.05);
+}
+
+#scroll-to-top i {
+    position: relative;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+#scroll-to-top:hover i {
+    transform: translateY(-3px);
+}
+
+#scroll-to-top .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--dark);
+    transition: height 0.1s linear;
+    z-index: 1;
+    transform: none; 
+    visibility: visible;
+}
