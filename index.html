@@ -499,84 +499,7 @@
             border: none;
         }
 
-        /* Custom Barcode */
-        .barcode-section {
-            padding: 60px 0;
-            background: var(--dark);
-            text-align: center;
-        }
 
-        .barcode-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .barcode-container h3 {
-            color: var(--gold);
-            margin-bottom: 20px;
-        }
-
-        .barcode-container p {
-            color: var(--white);
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-
-        .barcode {
-            display: inline-block;
-            background: var(--white);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .barcode-lines {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            height: 80px;
-            gap: 2px;
-        }
-
-        /* WhatsApp Float Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 24px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 1000;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            animation: pulse 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background-color: #128C7E;
-            color: #FFF;
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-            }
-        }
 
         /* Footer */
         footer {
@@ -712,9 +635,14 @@
       <div class="progress-bar"></div>
     </div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="preloader-logo">Timeless Luxury</div>
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">TL</div>
+            <h2>Timeless Luxury</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
     </div>
 
     <!-- Header -->
@@ -729,13 +657,13 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="hotel.html">Hotel</a></li>
                     <li><a href="restaurant.html">Restaurant</a></li>
                     <li><a href="bar.html">Bar</a></li>
                     <li><a href="lounge.html">Lounge</a></li>
                     <li><a href="club.html">Club</a></li>
                     <li><a href="rooftop.html">Rooftop</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -931,48 +859,6 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle - Fixed functionality
-        /* const mobileMenuButton = document.getElementById('mobile-menu');
-        const navigation = document.getElementById('nav');
-
-        mobileMenuButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            
-            // Toggle active class on button
-            this.classList.toggle('active');
-            
-            // Toggle active class on navigation
-            navigation.classList.toggle('active');
-            
-            // Prevent body scroll when menu is open
-            if (navigation.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Close menu when clicking on navigation links
-        const navLinks = navigation.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuButton.classList.remove('active');
-                navigation.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navigation.contains(e.target) && !mobileMenuButton.contains(e.target)) {
-                mobileMenuButton.classList.remove('active');
-                navigation.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        */ 
-
         // Header Scroll Effect
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
