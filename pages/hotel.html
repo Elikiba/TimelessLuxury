@@ -154,45 +154,35 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/icon/android-chrome-512x512.png"
+      href="../assets/icon/android-chrome-512x512.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icon/apple-touch-icon.png"
+      href="../assets/icon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icon/favicon-32x32.png"
+      href="../assets/icon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/icon/favicon-16x16.png"
+      href="../assets/icon/favicon-16x16.png"
     />
 
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="venues.css"/>
-    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/venues.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
   </head>
 
   <body>
-    <!-- Promo banner -->
-    <!-- <div class="promo-banner">
-      <div class="promo-content">
-        <span class="promo-text"
-          >Special Offer: Get 20% off on all suites this season! Use code
-          <strong>TimelessLuxury</strong></span
-        >
-        <button class="close-promo">&times;</button>
-      </div>
-    </div> -->
 
     <!-- Scroll Progress Bar -->
     <div id="scroll-to-top">
@@ -202,31 +192,31 @@
 
     <!-- Preloader -->
     <div class="preloader">
-      <div class="preloader-logo">Timeless Luxury</div>
+      <div class="preloader-logo">Timeless Luxury Hotel</div>
     </div>
 
     <!-- Header -->
     <header id="header">
-      <div class="container header-container">
-        <a href="index.html" class="logo">Timeless Luxury</a>
-        <button
-          class="menu-toggle"
-          id="mobile-menu"
-          aria-label="Toggle navigation"
-        >
-          <span class="menu-bar top-bar"></span>
-          <span class="menu-bar middle-bar"></span>
-          <span class="menu-bar bottom-bar"></span>
-        </button>
-        <nav id="nav">
-          <ul>
-            <li><a href="#experiences">Experiences</a></li>
-            <li><a href="suites.html">Rooms & Suites</a></li>
-            <li><a href="suites.html#reservations">Reservations</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Timeless Luxury</a>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="menu-bar top-bar"></span>
+                <span class="menu-bar middle-bar"></span>
+                <span class="menu-bar bottom-bar"></span>
+            </button>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="hotel.html">Hotel</a></li> -->
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="bar.html">Bar</a></li>
+                    <li><a href="lounge.html">Lounge</a></li>
+                    <li><a href="club.html">Club</a></li>
+                    <li><a href="rooftop.html">Rooftop</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -239,9 +229,9 @@
         class="hero-video"
         aria-hidden="true"
       >
-        <source src="assets/videos/serenity.webm" type="video/webm" />
+        <source src="../assets/videos/serenity.webm" type="video/webm" />
         <img
-          src="assets/views/view-2.webp"
+          src="../assets/views/view-2.webp"
           alt="Background fallback"
           loading="lazy"
         />
@@ -249,7 +239,7 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Luxury Meets Serenity</h1>
+          <h1>Luxury Meets Timelessness</h1>
           <p>
             Experience unparalleled comfort and world-class service at Timeless
             Luxury, Benin's premier 5-star hotel, where every detail is crafted to perfection.
@@ -288,7 +278,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('assets/rooms/room-1.webp')"
+                style="background-image: url('../assets/rooms/room-1.webp')"
               ></div>
               <div class="room-info">
                 <h3>Royal Suite</h3>
@@ -308,7 +298,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('assets/rooms/room-2.webp')"
+                style="background-image: url('../assets/rooms/room-2.webp')"
               ></div>
               <div class="room-info">
                 <h3>Presidential Suite</h3>
@@ -328,7 +318,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('assets/rooms/room-3.webp')"
+                style="background-image: url('../assets/rooms/room-3.webp')"
               ></div>
               <div class="room-info">
                 <h3>Celebrity Suite</h3>
@@ -363,23 +353,23 @@
         <div class="slideshow">
           <div
             class="slide active"
-            style="background-image: url('assets/views/view-1.webp')"
+            style="background-image: url('../assets/views/view-1.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-2.webp')"
+            style="background-image: url('../assets/views/view-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/pool/pool-2.webp')"
+            style="background-image: url('../assets/pool/pool-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-4.webp')"
+            style="background-image: url('../assets/views/view-4.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-5.webp')"
+            style="background-image: url('../assets/views/view-5.webp')"
           ></div>
         </div>
         <div class="slideshow-content">
@@ -406,21 +396,21 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="assets/gym/gym.webp"
+                src="../assets/gym/gym.webp"
                 alt="Lady running on a treadmill"
                 class="active"
               />
-              <img src="assets/gym/gym-1.webp" alt="Man flexing his triceps" />
+              <img src="../assets/gym/gym-1.webp" alt="Man flexing his triceps" />
               <img
-                src="assets/gym/gym-2.webp"
+                src="../assets/gym/gym-2.webp"
                 alt="Lady bending to pick up a bar"
               />
-              <img src="assets/gym/gym-3.webp" alt="Man on a treadmill" />
+              <img src="../assets/gym/gym-3.webp" alt="Man on a treadmill" />
               <img
-                src="assets/gym/gym-4.webp"
+                src="../assets/gym/gym-4.webp"
                 alt="Lady benching with a male spotter"
               />
-              <img src="assets/gym/gym-5.webp" alt="Lady squatting" />
+              <img src="../assets/gym/gym-5.webp" alt="Lady squatting" />
             </div>
             <div class="experience-overlay">
               <h3>World-class Gym</h3>
@@ -440,18 +430,18 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="assets/spa/spa.webp"
+                src="../assets/spa/spa.webp"
                 alt="Lady enjoying spa treatment"
                 class="active"
               />
               <img
-                src="assets/spa/spa-1.webp"
+                src="../assets/spa/spa-1.webp"
                 alt="Lady getting a Massage Therapy"
               />
-              <img src="assets/spa/spa-2.webp" alt="Guy on a facemask" />
-              <img src="assets/spa/spa-3.webp" alt="Relaxation area" />
-              <img src="assets/spa/spa-4.webp" alt="Guy getting a Massage" />
-              <img src="assets/spa/spa-5.webp" alt="Lady getting a Massage" />
+              <img src="../assets/spa/spa-2.webp" alt="Guy on a facemask" />
+              <img src="../assets/spa/spa-3.webp" alt="Relaxation area" />
+              <img src="../assets/spa/spa-4.webp" alt="Guy getting a Massage" />
+              <img src="../assets/spa/spa-5.webp" alt="Lady getting a Massage" />
             </div>
             <div class="experience-overlay">
               <h3>Serenity Spa</h3>
@@ -471,23 +461,23 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="assets/pool/pool.webp"
+                src="../assets/pool/pool.webp"
                 alt="Lady lying on a pool"
                 class="active"
               />
-              <img src="assets/pool/pool-1.webp" alt="Lady on private pool" />
-              <img src="assets/pool/pool-2.webp" alt="Lady doing backstroke" />
+              <img src="../assets/pool/pool-1.webp" alt="Lady on private pool" />
+              <img src="../assets/pool/pool-2.webp" alt="Lady doing backstroke" />
               <img
-                src="assets/views/view-3-pool-3.webp"
+                src="../assets/views/view-3-pool-3.webp"
                 alt="Lady lying on a poolside"
               />
-              <img src="assets/pool/pool-4.webp" alt="Man on a pool" />
+              <img src="../assets/pool/pool-4.webp" alt="Man on a pool" />
               <img
-                src="assets/pool/pool-5.webp"
+                src="../assets/pool/pool-5.webp"
                 alt="Lady on a roof-top pool"
               />
               <img
-                src="assets/pool/pool-6.webp"
+                src="../assets/pool/pool-6.webp"
                 alt="Lady sipping pineapple juice in a pool"
               />
             </div>
@@ -511,12 +501,12 @@
           <!-- Bar Experience -->
           <div class="experience-card">
             <div class="experience-images">
-              <img src="assets/bar/bar.webp" alt="Serene bar" class="active" />
-              <img src="assets/bar/bar-1.webp" alt="Luxury bar" />
-              <img src="assets/bar/bar-2.webp" alt="Cocktail" />
-              <img src="assets/bar/bar-3.webp" alt="Bar seating" />
-              <img src="assets/bar/bar-4.webp" alt="Wine collection" />
-              <img src="assets/bar/bar-5.webp" alt="Man at a bar" />
+              <img src="../assets/bar/bar.webp" alt="Serene bar" class="active" />
+              <img src="../assets/bar/bar-1.webp" alt="Luxury bar" />
+              <img src="../assets/bar/bar-2.webp" alt="Cocktail" />
+              <img src="../assets/bar/bar-3.webp" alt="Bar seating" />
+              <img src="../assets/bar/bar-4.webp" alt="Wine collection" />
+              <img src="../assets/bar/bar-5.webp" alt="Man at a bar" />
             </div>
             <div class="experience-overlay">
               <h3>The Velvet Lounge</h3>
@@ -536,15 +526,15 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="assets/food/pyam.webp"
+                src="../assets/food/pyam.webp"
                 alt="Pounded yam & soup"
                 class="active"
               />
-              <img src="assets/food/women.webp" alt="2 women" />
-              <img src="assets/food/egusi.webp" alt="Egusi soup" />
-              <img src="assets/food/fried-rice.webp" alt="Fried rice" />
-              <img src="assets/food/jollof.webp" alt="Jollof rice" />
-              <img src="assets/food/fiesta.webp" alt="Meal presentation" />
+              <img src="../assets/food/women.webp" alt="2 women" />
+              <img src="../assets/food/egusi.webp" alt="Egusi soup" />
+              <img src="../assets/food/fried-rice.webp" alt="Fried rice" />
+              <img src="../assets/food/jollof.webp" alt="Jollof rice" />
+              <img src="../assets/food/fiesta.webp" alt="Meal presentation" />
             </div>
             <div class="experience-overlay">
               <h3>Gourmet Haven</h3>
@@ -569,23 +559,23 @@
         <div class="slideshow">
           <div
             class="slide active"
-            style="background-image: url('assets/views/view-6-pool-2.webp')"
+            style="background-image: url('../assets/views/view-6-pool-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-7.webp')"
+            style="background-image: url('../assets/views/view-7.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-8.webp')"
+            style="background-image: url('../assets/views/view-8.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-9.webp')"
+            style="background-image: url('../assets/views/view-9.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('assets/views/view-10.webp')"
+            style="background-image: url('../assets/views/view-10.webp')"
           ></div>
         </div>
         <div class="slideshow-content">
@@ -605,11 +595,10 @@
                 <p>Located in the heart of Benin City</p>
             </div>
             <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.659952410153!2d5.615893274044582!3d6.308327725628363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3000dfdac51%3A0x42b49ca675206bda!2sTimeless%20luxury-Benin!5e0!3m2!1sen!2sng!4v1755189213915!5m2!1sen!2sng"
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3965.4370480733987!2d5.6211376!3d6.3373933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3563a5ab0cf%3A0x541b46d9f41d2d88!2sTimeless%20Hotel%20and%20Club!5e0!3m2!1sen!2sng!4v1755293596576!5m2!1sen!2sng" 
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
             </div>
         </div>
     </section>
@@ -620,31 +609,32 @@
     </a>
 
     <!-- Footer -->
-    <footer>
+   <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Timeless Luxury</h3>
-                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences under one roof.</p>
+                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
+                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 63, Ihama road, GRA, Benin, Nigeria</p>
-                    <p><i class="fas fa-phone"></i> 0708 613 7054</p>
-                    <p><i class="fab fa-whatsapp"></i> 07086137054</p>
+                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
+                    <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
                 </div>
                 <div class="footer-section">
                     <h3>Our Services</h3>
-                    <p><a href="hotel.html">Luxury Hotel</a></p>
+                    <!-- <p><a href="hotel.html">Luxury Hotel</a></p> -->
                     <p><a href="bar.html">Premium Bar</a></p>
                     <p><a href="lounge.html">Elegant Lounge</a></p>
                     <p><a href="club.html">Exclusive Club</a></p>
                     <p><a href="rooftop.html">Rooftop Bar</a></p>
+                    <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -665,25 +655,7 @@
       </div>
     </div>
 
-    <!-- Newsletter Modal -->
-    <!-- <div class="newsletter-modal" id="newsletterModal">
-      <span class="close-modal" id="closeModal">&times;</span>
-      <div class="email-icon">
-        <i class="fas fa-paper-plane"></i>
-      </div>
-      <h3>Stay Updated</h3>
-      <p>Subscribe to our newsletter for exclusive offers and updates</p>
-      <form id="newsletterForm">
-        <input
-          type="email"
-          class="newsletter-input"
-          placeholder="Your email address"
-          required
-        />
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div> -->
+    <script src="../script/script.js"></script>
 
-    <script src="script.js"></script>
   </body>
 </html>

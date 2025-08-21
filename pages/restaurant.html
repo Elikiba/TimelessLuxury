@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Soft Touch Hotel and Suites</title>
+    <meta name="description" content="Experience fine dining at our luxury restaurant with exquisite cuisine and elegant ambiance.">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+    <link rel="apple-touch-icon" href="./assets/logo.svg">
+    <meta name="theme-color" content="#2a0845">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/restaurant.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <svg width="40" height="40" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="60" r="58" fill="#2a0845" stroke="#FFDF00" stroke-width="4"/>
+                            <rect x="35" y="45" width="50" height="35" fill="#FFDF00" rx="2"/>
+                            <rect x="37" y="47" width="46" height="31" fill="#2a0845" rx="1"/>
+                            <rect x="40" y="52" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="49" y="52" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="58" y="52" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="67" y="52" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="76" y="52" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="40" y="63" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="49" y="63" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="58" y="63" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="67" y="63" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="76" y="63" width="6" height="8" fill="#FFDF00" rx="1"/>
+                            <rect x="56" y="68" width="8" height="12" fill="#FFDF00" rx="1"/>
+                            <circle cx="61" cy="74" r="1" fill="#2a0845"/>
+                            <polygon points="30,45 60,30 90,45" fill="#FFDF00"/>
+                            <polygon points="32,43 60,32 88,43" fill="#2a0845"/>
+                            <polygon points="60,25 62,30 67,30 63,33 65,38 60,35 55,38 57,33 53,30 58,30" fill="#FFDF00"/>
+                        </svg>
+                        <div class="logo-text">
+                            <span class="logo-title">Soft Touch</span>
+                            <span class="logo-sub-text">Hotel & Suites</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="suites.html" class="nav-link">Suites</a></li>
+                    <li><a href="restaurant.html" class="nav-link active">Restaurant</a></li>
+                    <li><a href="bar.html" class="nav-link">Bar</a></li>
+                    <li><a href="lounge.html" class="nav-link">Lounge</a></li>
+                    <li><a href="rooftop.html" class="nav-link">Rooftop</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="book-button">Book Now</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <ul class="mobile-nav-list">
+                        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                        <li><a href="suites.html" class="mobile-nav-link">Suites</a></li>
+                        <li><a href="restaurant.html" class="mobile-nav-link">Restaurant</a></li>
+                        <li><a href="bar.html" class="mobile-nav-link">Bar</a></li>
+                        <li><a href="lounge.html" class="mobile-nav-link">Lounge</a></li>
+                        <li><a href="rooftop.html" class="mobile-nav-link">Rooftop</a></li>
+                        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+                        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+                        <li><button class="mobile-book-button">Book Now</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Restaurant Hero -->
+    <section class="restaurant-hero">
+        <div class="hero-content">
+            <h1>Fine Dining Restaurant</h1>
+            <p>Exquisite cuisine crafted with passion and served with elegance</p>
+            <button class="reserve-button">Make Reservation</button>
+        </div>
+    </section>
+
+    <!-- Restaurant Info -->
+    <section class="restaurant-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-content">
+                    <h2>Culinary Excellence</h2>
+                    <p>Our restaurant offers an exceptional dining experience with a menu that celebrates both local Nigerian flavors and international cuisine. Each dish is carefully crafted by our expert chefs using the finest ingredients.</p>
+                    <p>Whether you're enjoying a romantic dinner, business lunch, or celebrating a special occasion, our elegant atmosphere and impeccable service create the perfect setting for memorable moments.</p>
+                    
+                    <div class="restaurant-features">
+                        <div class="feature">
+                            <span class="feature-icon">👨‍🍳</span>
+                            <div>
+                                <h4>Expert Chefs</h4>
+                                <p>Internationally trained culinary masters</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌿</span>
+                            <div>
+                                <h4>Fresh Ingredients</h4>
+                                <p>Locally sourced, premium quality ingredients</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍷</span>
+                            <div>
+                                <h4>Wine Selection</h4>
+                                <p>Curated collection of fine wines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="./assets/restaurant-interior.jpg" alt="Restaurant Interior" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Menu Highlights</h2>
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab" data-category="mains">Main Courses</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="beverages">Beverages</button>
+            </div>
+            
+            <div class="menu-content">
+                <div class="menu-category active" id="appetizers">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Grilled Prawns</h4>
+                                <p>Fresh prawns grilled to perfection with herbs and spices</p>
+                            </div>
+                            <span class="menu-price">₦8,500</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Pepper Soup</h4>
+                                <p>Traditional Nigerian pepper soup with assorted meat</p>
+                            </div>
+                            <span class="menu-price">₦6,000</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Caesar Salad</h4>
+                                <p>Crisp romaine lettuce with parmesan and croutons</p>
+                            </div>
+                            <span class="menu-price">₦4,500</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Jollof Rice Special</h4>
+                                <p>Premium jollof rice with grilled chicken and plantain</p>
+                            </div>
+                            <span class="menu-price">₦12,000</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Grilled Salmon</h4>
+                                <p>Atlantic salmon with lemon butter sauce and vegetables</p>
+                            </div>
+                            <span class="menu-price">₦18,500</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Beef Steak</h4>
+                                <p>Tender beef steak with mushroom sauce and mashed potatoes</p>
+                            </div>
+                            <span class="menu-price">₦22,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Chocolate Lava Cake</h4>
+                                <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+                            </div>
+                            <span class="menu-price">₦5,500</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Tiramisu</h4>
+                                <p>Classic Italian dessert with coffee and mascarpone</p>
+                            </div>
+                            <span class="menu-price">₦4,800</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Fresh Fruit Platter</h4>
+                                <p>Seasonal tropical fruits beautifully presented</p>
+                            </div>
+                            <span class="menu-price">₦3,500</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Fresh Juice Selection</h4>
+                                <p>Orange, pineapple, watermelon, or mixed fruit</p>
+                            </div>
+                            <span class="menu-price">₦2,500</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Premium Wine</h4>
+                                <p>Selection of red, white, and rosé wines</p>
+                            </div>
+                            <span class="menu-price">₦15,000+</span>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-info">
+                                <h4>Specialty Coffee</h4>
+                                <p>Espresso, cappuccino, latte, or Nigerian coffee</p>
+                            </div>
+                            <span class="menu-price">₦1,800</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Reservations -->
+    <section class="hours-section">
+        <div class="container">
+            <div class="hours-grid">
+                <div class="hours-info">
+                    <h3>Operating Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span>Breakfast</span>
+                            <span>6:00 AM - 10:30 AM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Lunch</span>
+                            <span>12:00 PM - 3:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Dinner</span>
+                            <span>6:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Weekend Brunch</span>
+                            <span>10:00 AM - 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reservation-info">
+                    <h3>Make a Reservation</h3>
+                    <p>For the best dining experience, we recommend making a reservation in advance.</p>
+                    <div class="reservation-methods">
+                        <div class="method">
+                            <span class="method-icon">📞</span>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>07067826432</p>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <span class="method-icon">💬</span>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Quick reservation via WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Our Restaurant</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d247.8081607482349!2d5.6073443897915345!3d6.402946696447449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3b6f7092e95%3A0x1543ab58ee3ff3d9!2sSoft%20Touch%20Hotel%20and%20Suites!5e0!3m2!1sen!2sng!4v1755013514781!5m2!1sen!2sng"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Soft Touch Hotel and Suites Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Soft Touch Hotel & Suites</h3>
+                    <p class="footer-description">Experience luxury and comfort in the heart of Benin City.</p>
+                    <div class="contact-info">
+                        <p>📍 3, 24th Street, BDPA, Off Ugbowo-Lagos Road</p>
+                        <p>📞 07067826432</p>
+                        <p>✉️ info@softtouchhotel.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="suites.html" class="footer-link">Suites</a></li>
+                        <li><a href="restaurant.html" class="footer-link">Restaurant</a></li>
+                        <li><a href="bar.html" class="footer-link">Bar</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li>Luxury Accommodations</li>
+                        <li>Fine Dining Restaurant</li>
+                        <li>Cocktail Bar & Lounge</li>
+                        <li>Rooftop Experience</li>
+                        <li>Business Center</li>
+                        <li>Event Hosting</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span class="social-icon">📘</span>
+                            <span class="social-name">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="social-icon">📷</span>
+                            <span class="social-name">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="social-icon">🐦</span>
+                            <span class="social-name">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">&copy; 2024 Soft Touch Hotel and Suites. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                        <a href="#" class="footer-bottom-link">Terms of Service</a>
+                        <a href="#" class="footer-bottom-link">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-container">
+        <button class="whatsapp-button" id="whatsappButton">
+            <div class="whatsapp-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.085" fill="currentColor"/>
+                </svg>
+            </div>
+            <div class="tooltip">Chat with us on WhatsApp</div>
+            <div class="pulse"></div>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/restaurant.js"></script>
+</body>
+</html>

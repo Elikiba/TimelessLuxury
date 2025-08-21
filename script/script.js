@@ -32,7 +32,7 @@ function initAllFunctions() {
 }
 
 // Mobile Menu Functionality
-function initMobileMenu() {
+ function initMobileMenu() {
     const mobileMenu = document.getElementById('mobile-menu');
     const nav = document.getElementById('nav');
     
@@ -66,7 +66,7 @@ function initMobileMenu() {
             closeMenu();
         }
     });
-}
+} 
 
 // Smooth Scrolling
 function initSmoothScrolling() {
@@ -155,7 +155,7 @@ function initPreloader() {
         preloader.style.visibility = 'hidden';
         document.body.style.overflow = '';
         setTimeout(() => preloader.remove(), 1000);
-    }, 4000);
+    }, 3000);
 }
 
 // Main Slideshow

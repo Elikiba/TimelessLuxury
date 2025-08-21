@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooftop Bar - Timeless Luxury</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/venues.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll to Top Button -->
+    <div id="scroll-to-top" style="position: fixed; bottom: 30px; left: 30px; width: 50px; height: 50px; background: #FFDF00; color: #fff; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1); z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.2); overflow: hidden;">
+        <i class="fas fa-chevron-up" style="font-size: 1.2rem;"></i>
+        <div class="progress-bar" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 0%; background: #020335; transition: height 0.1s linear; z-index: 1;"></div>
+    </div>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2347086137054" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="23" stroke="#FFDF00" stroke-width="2" fill="none"/>
+                    <path d="M15 20h20M15 25h20M15 30h20" stroke="#FFDF00" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="25" cy="25" r="8" stroke="#FFDF00" stroke-width="1" fill="none"/>
+                    <text x="25" y="42" text-anchor="middle" fill="#FFDF00" font-size="6" font-family="serif">TL</text>
+                </svg>
+                <span class="logo-text">Timeless Luxury</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Restaurant</a>
+                <a href="rooftop.html" class="nav-link active">Rooftop Bar</a>
+                <a href="club.html" class="nav-link">Club</a>
+                <a href="bar.html" class="nav-link">Bar</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero rooftop-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sky High Sophistication</h1>
+            <p class="hero-subtitle">Panoramic views and premium cocktails above the city lights</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Reserve Your Table</button>
+                <button class="btn btn-secondary">View Cocktail Menu</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rooftop bar with city view" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Elevated Experience</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌃</div>
+                    <h3>360° City Views</h3>
+                    <p>Breathtaking panoramic views of the city skyline from our 25th-floor location</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍸</div>
+                    <h3>Craft Cocktails</h3>
+                    <p>Artisanal cocktails crafted by award-winning mixologists using premium spirits</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Live Entertainment</h3>
+                    <p>Jazz performances and DJ sets creating the perfect ambient atmosphere</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>VIP Lounges</h3>
+                    <p>Exclusive private areas for intimate gatherings and special celebrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Cocktails -->
+    <section class="cocktails">
+        <div class="container">
+            <h2 class="section-title">Signature Cocktails</h2>
+            <div class="cocktails-grid">
+                <div class="cocktail-card">
+                    <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Golden Hour Martini" loading="lazy">
+                    <div class="cocktail-info">
+                        <h3>Golden Hour Martini</h3>
+                        <p>Premium gin, elderflower liqueur, and champagne with gold flakes</p>
+                        <span class="price">$28</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <img src="https://images.pexels.com/photos/1283566/pexels-photo-1283566.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Skyline Manhattan" loading="lazy">
+                    <div class="cocktail-info">
+                        <h3>Skyline Manhattan</h3>
+                        <p>Aged bourbon, sweet vermouth, and luxardo cherry with smoke effect</p>
+                        <span class="price">$25</span>
+                    </div>
+                </div>
+                <div class="cocktail-card">
+                    <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rooftop Royale" loading="lazy">
+                    <div class="cocktail-info">
+                        <h3>Rooftop Royale</h3>
+                        <p>Dom Pérignon champagne with blackberry liqueur and gold garnish</p>
+                        <span class="price">$45</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Atmosphere</h2>
+            <div class="gallery-grid">
+                <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rooftop evening ambiance" loading="lazy">
+                <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bar counter" loading="lazy">
+                <img src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=400" alt="City view" loading="lazy">
+                <img src="https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cocktails" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Reserve Your Sky-High Experience</h2>
+                    <p>Located in the heart of Benin City</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Location</h4>
+                            <p>63, Ihama road, GRA, Benin, Nigeria</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Reservations</h4>
+                            <p>0708 613 7054</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Hours</h4>
+                            <p>Tuesday - Thursday: 5:00 PM - 1:00 AM<br>
+                               Friday - Saturday: 5:00 PM - 2:00 AM<br>
+                               Sunday: 5:00 PM - 12:00 AM<br>
+                               Closed Mondays</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container" style="margin-top: 2rem;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.659952410153!2d5.615893274044582!3d6.308327725628363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3000dfdac51%3A0x42b49ca675206bda!2sTimeless%20luxury-Benin!5e0!3m2!1sen!2sng!4v1755189213915!5m2!1sen!2sng"
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25" r="23" stroke="#FFDF00" stroke-width="2" fill="none"/>
+                            <path d="M15 20h20M15 25h20M15 30h20" stroke="#FFDF00" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="25" cy="25" r="8" stroke="#FFDF00" stroke-width="1" fill="none"/>
+                            <text x="25" y="42" text-anchor="middle" fill="#FFDF00" font-size="6" font-family="serif">TL</text>
+                        </svg>
+                        <span>Timeless Luxury</span>
+                    </div>
+                    <p>Creating extraordinary dining experiences since 2008</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Restaurant</a></li>
+                        <li><a href="rooftop.html">Rooftop Bar</a></li>
+                        <li><a href="club.html">Club</a></li>
+                        <li><a href="bar.html">Bar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>+1 (555) 123-4567</li>
+                        <li>info@timelessluxury.com</li>
+                        <li>123 Luxury Avenue</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Timeless Luxury. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/main.js"></script>
+    <script>
+    // Scroll to Top Button Functionality
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    const progressBar = scrollToTopBtn.querySelector('.progress-bar');
+    window.addEventListener('scroll', () => {
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollPosition = window.scrollY;
+        const scrollPercentage = (scrollPosition / (scrollHeight - clientHeight)) * 100;
+        const show = scrollPosition > 300;
+        scrollToTopBtn.style.opacity = show ? '1' : '0';
+        scrollToTopBtn.style.visibility = show ? 'visible' : 'hidden';
+        progressBar.style.height = `${scrollPercentage}%`;
+    });
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+</body>
+</html>

@@ -40,29 +40,29 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/icon/android-chrome-512x512.png"
+      href="../assets/icon/android-chrome-512x512.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icon/apple-touch-icon.png"
+      href="../assets/icon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icon/favicon-32x32.png"
+      href="../assets/icon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/icon/favicon-16x16.png"
+      href="../assets/icon/favicon-16x16.png"
     />
 
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="../site.webmanifest" />
     <!-- CSS -->
-     <link rel="stylesheet" href="global.css">
+     <link rel="stylesheet" href="../styles/global.css">
     <style>
         :root {
             --gold: #FFDF00;
@@ -109,7 +109,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 1000;
+            z-index: 100;
             padding: 20px 0;
             background: transparent;
             backdrop-filter: blur(10px);
@@ -258,6 +258,7 @@
 
         .hero-content {
             text-align: center;
+            justify-content: center;
             color: var(--white);
             z-index: 1;
             padding: 0 20px;
@@ -295,6 +296,7 @@
         .about-text {
             font-size: 1.2rem;
             line-height: 1.8;
+            text-align: justify;
         }
 
         .about-text p {
@@ -536,41 +538,6 @@
             gap: 2px;
         }
 
-        .bar {
-            background: var(--dark);
-            width: 3px;
-            transition: var(--transition);
-        }
-
-        .bar:nth-child(1) { height: 60px; }
-        .bar:nth-child(2) { height: 40px; }
-        .bar:nth-child(3) { height: 70px; }
-        .bar:nth-child(4) { height: 30px; }
-        .bar:nth-child(5) { height: 80px; }
-        .bar:nth-child(6) { height: 50px; }
-        .bar:nth-child(7) { height: 75px; }
-        .bar:nth-child(8) { height: 45px; }
-        .bar:nth-child(9) { height: 65px; }
-        .bar:nth-child(10) { height: 35px; }
-        .bar:nth-child(11) { height: 80px; }
-        .bar:nth-child(12) { height: 55px; }
-        .bar:nth-child(13) { height: 70px; }
-        .bar:nth-child(14) { height: 40px; }
-        .bar:nth-child(15) { height: 75px; }
-        .bar:nth-child(16) { height: 60px; }
-        .bar:nth-child(17) { height: 45px; }
-        .bar:nth-child(18) { height: 80px; }
-        .bar:nth-child(19) { height: 50px; }
-        .bar:nth-child(20) { height: 65px; }
-
-        .barcode-text {
-            color: var(--dark);
-            font-family: 'Courier New', monospace;
-            font-size: 1.2rem;
-            margin-top: 10px;
-            letter-spacing: 3px;
-        }
-
         /* WhatsApp Float Button */
         .whatsapp-float {
             position: fixed;
@@ -724,32 +691,7 @@
 
             .map-container iframe {
                 height: 300px;
-            }
-
-            .barcode-lines {
-                height: 60px;
-            }
-
-            .bar:nth-child(1) { height: 45px; }
-            .bar:nth-child(2) { height: 30px; }
-            .bar:nth-child(3) { height: 50px; }
-            .bar:nth-child(4) { height: 25px; }
-            .bar:nth-child(5) { height: 60px; }
-            .bar:nth-child(6) { height: 35px; }
-            .bar:nth-child(7) { height: 55px; }
-            .bar:nth-child(8) { height: 30px; }
-            .bar:nth-child(9) { height: 45px; }
-            .bar:nth-child(10) { height: 25px; }
-            .bar:nth-child(11) { height: 60px; }
-            .bar:nth-child(12) { height: 40px; }
-            .bar:nth-child(13) { height: 50px; }
-            .bar:nth-child(14) { height: 30px; }
-            .bar:nth-child(15) { height: 55px; }
-            .bar:nth-child(16) { height: 45px; }
-            .bar:nth-child(17) { height: 35px; }
-            .bar:nth-child(18) { height: 60px; }
-            .bar:nth-child(19) { height: 40px; }
-            .bar:nth-child(20) { height: 50px; }
+            }  
 
             .whatsapp-float {
                 bottom: 20px;
@@ -802,8 +744,8 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <video autoplay muted loop playsinline class="hero-video">
-            <source src="assets/videos/serenity.webm" type="video/webm" />
-            <img src="assets/views/view-2.webp" alt="Background fallback" />
+            <source src="../assets/videos/serenity.webm" type="video/webm" />
+            <img src="../assets/views/view-2.webp" alt="Background fallback" />
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -812,6 +754,7 @@
         </div>
     </section>
 
+
     <!-- About Section -->
     <section class="about-section" id="about">
         <div class="container">
@@ -819,22 +762,8 @@
                 <h2>About Timeless Luxury</h2>
                 <p>Excellence redefined through unparalleled hospitality and luxury experiences</p>
             </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Since our inception, Timeless Luxury has been Benin City's premier destination for sophisticated hospitality. We pride ourselves on creating unforgettable experiences that blend traditional elegance with contemporary luxury.</p>
-                    
-                    <p>Our commitment to excellence is evident in every detail, from our world-class amenities to our exceptional service standards. Whether you're seeking a luxurious retreat, fine dining experience, or an elegant venue for celebrations, we provide the perfect setting for life's most memorable moments.</p>
-                    
-                    <p>Located in the heart of Benin City, our facilities represent the pinnacle of luxury hospitality in Nigeria, offering five distinct experiences under one roof - each designed to exceed expectations and create lasting memories.</p>
-                </div>
-                
-                <div class="about-image">
-                    <img src="assets/views/view-4.webp" alt="Timeless Luxury Interior">
-                </div>
-            </div>
 
-            <div class="stats">
+              <div class="stats">
                 <div class="stat-item">
                     <div class="stat-number">5</div>
                     <div class="stat-label">Unique Destinations</div>
@@ -852,6 +781,22 @@
                     <div class="stat-label">Luxury Experience</div>
                 </div>
             </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Since our inception, Timeless Luxury has been Benin City's premier destination for sophisticated hospitality. We pride ourselves on creating unforgettable experiences that blend traditional elegance with contemporary luxury.</p>
+                    
+                    <p>Our commitment to excellence is evident in every detail, from our world-class amenities to our exceptional service standards. Whether you're seeking a luxurious retreat, fine dining experience, or an elegant venue for celebrations, we provide the perfect setting for life's most memorable moments.</p>
+                    
+                    <p>Located in the heart of Benin City, our facilities represent the pinnacle of luxury hospitality in Nigeria, offering five distinct experiences under one roof - each designed to exceed expectations and create lasting memories.</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="../assets/views/view-4.webp" alt="Timeless Luxury Interior">
+                </div>
+            </div>
+
+            
         </div>
     </section>
 
@@ -866,7 +811,7 @@
             <div class="services-grid">
                 <!-- Hotel -->
                 <div class="service-card" onclick="location.href='hotel.html'">
-                    <img src="assets/rooms/room-1.webp" alt="Luxury Hotel Suite">
+                    <img src="../assets/rooms/room-1.webp" alt="Luxury Hotel Suite">
                     <div class="service-overlay">
                         <h3>Hotel</h3>
                         <p>Experience unparalleled luxury in our exclusive suites with world-class amenities and breathtaking views.</p>
@@ -876,7 +821,7 @@
                 
                 <!-- Restaurant -->
                 <div class="service-card" onclick="location.href='restaurant.html'">
-                    <img src="assets/food/women.webp" alt="Fine Dining Restaurant">
+                    <img src="../assets/food/women.webp" alt="Fine Dining Restaurant">
                     <div class="service-overlay">
                         <h3>Restaurant</h3>
                         <p>Indulge in a culinary journey with exquisite dishes crafted by our world-class chefs.</p>
@@ -886,7 +831,7 @@
 
                 <!-- Bar -->
                 <div class="service-card" onclick="location.href='bar.html'">
-                    <img src="assets/bar/bar.webp" alt="Premium Bar">
+                    <img src="../assets/bar/bar.webp" alt="Premium Bar">
                     <div class="service-overlay">
                         <h3>Bar</h3>
                         <p>Sophisticated cocktails and premium spirits in an elegant atmosphere perfect for intimate conversations.</p>
@@ -896,7 +841,7 @@
 
                 <!-- Lounge -->
                 <div class="service-card" onclick="location.href='lounge.html'">
-                    <img src="assets/views/view-4.webp" alt="Elegant Lounge">
+                    <img src="../assets/views/view-4.webp" alt="Elegant Lounge">
                     <div class="service-overlay">
                         <h3>Lounge</h3>
                         <p>Relax in ultimate comfort with curated entertainment, gourmet bites, and exceptional service.</p>
@@ -906,7 +851,7 @@
 
                 <!-- Club -->
                 <div class="service-card" onclick="location.href='club.html'">
-                    <img src="assets/views/view-7.webp" alt="Exclusive Club">
+                    <img src="../assets/views/view-7.webp" alt="Exclusive Club">
                     <div class="service-overlay">
                         <h3>Club</h3>
                         <p>Dance the night away with world-class DJs, premium bottle service, and VIP experiences.</p>
@@ -916,7 +861,7 @@
 
                 <!-- Rooftop -->
                 <div class="service-card" onclick="location.href='rooftop.html'">
-                    <img src="assets/pool/pool-5.webp" alt="Rooftop Bar">
+                    <img src="../assets/pool/pool-5.webp" alt="Rooftop Bar">
                     <div class="service-overlay">
                         <h3>Rooftop</h3>
                         <p>Stunning city views, infinity pool, and sky-high cocktails create the perfect elevated experience.</p>
@@ -944,40 +889,6 @@
         </div>
     </section>
 
-    <!-- Custom Barcode Section -->
-    <!-- <section class="barcode-section">
-        <div class="container">
-            <div class="barcode-container">
-                <h3>Scan for Exclusive Access</h3>
-                <p>Unlock premium experiences and special offers with our unique access code</p>
-                <div class="barcode">
-                    <div class="barcode-lines">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="barcode-text">TL2025-LUXURY</div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- WhatsApp Float Button -->
     <a href="https://wa.me/2347086137054" class="whatsapp-float" target="_blank">
@@ -992,9 +903,9 @@
                     <h3>Timeless Luxury</h3>
                     <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
+                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -1021,7 +932,7 @@
 
     <script>
         // Mobile Menu Toggle - Fixed functionality
-        const mobileMenuButton = document.getElementById('mobile-menu');
+        /* const mobileMenuButton = document.getElementById('mobile-menu');
         const navigation = document.getElementById('nav');
 
         mobileMenuButton.addEventListener('click', function(e) {
@@ -1060,6 +971,7 @@
                 document.body.style.overflow = '';
             }
         });
+        */ 
 
         // Header Scroll Effect
         window.addEventListener('scroll', function() {
@@ -1154,6 +1066,6 @@
             statsObserver.observe(statsSection);
         }
     </script>
-    <script src="script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
