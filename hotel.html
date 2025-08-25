@@ -154,49 +154,57 @@
     <link
       rel="icon"
       type="image/png"
-      href="../assets/icon/android-chrome-512x512.png"
+      href="./assets/icon/android-chrome-512x512.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../assets/icon/apple-touch-icon.png"
+      href="./assets/icon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../assets/icon/favicon-32x32.png"
+      href="./assets/icon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../assets/icon/favicon-16x16.png"
+      href="./assets/icon/favicon-16x16.png"
     />
 
-    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <link rel="stylesheet" href="../styles/venues.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/venues.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
   </head>
 
   <body>
 
-    <!-- Scroll Progress Bar -->
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">TL</div>
+            <h2 class="preloader-title">Timeless Hotel</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Scroll Progress Bar -->
     <div id="scroll-to-top">
       <i class="fas fa-chevron-up"></i>
       <div class="progress-bar"></div>
     </div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="preloader-logo">Timeless Luxury Hotel</div>
-    </div>
 
     <!-- Header -->
-    <header id="header">
+      <header id="header">
         <div class="container header-container">
             <a href="index.html" class="logo">Timeless Luxury</a>
             <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
@@ -205,20 +213,18 @@
                 <span class="menu-bar bottom-bar"></span>
             </button>
             <nav id="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <!-- <li><a href="hotel.html">Hotel</a></li> -->
-                    <li><a href="restaurant.html">Restaurant</a></li>
-                    <li><a href="bar.html">Bar</a></li>
-                    <li><a href="lounge.html">Lounge</a></li>
-                    <li><a href="club.html">Club</a></li>
-                    <li><a href="rooftop.html">Rooftop</a></li>
+                <ul class="nav-menu">
+                    <li><a href="index.html" onclick="showPage('home')">Home</a></li>
+                    <li><a href="rooftop.html" onclick="showPage('rooftop')">Rooftop Bar</a></li>
+                    <li><a href="restaurant.html" onclick="showPage('restaurant')">Restaurant</a></li>
+                    <li><a href="lounge.html" onclick="showPage('lounge')">Lounge</a></li>
+                    <li><a href="club.html" onclick="showPage('club')">Club</a></li>
+                    <li><a href="about.html" onclick="showPage('about')">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
+   
     <!-- Hero Section -->
     <section class="hero">
       <video
@@ -229,9 +235,9 @@
         class="hero-video"
         aria-hidden="true"
       >
-        <source src="../assets/videos/serenity.webm" type="video/webm" />
+        <source src="./assets/videos/serenity.webm" type="video/webm" />
         <img
-          src="../assets/views/view-2.webp"
+          src="./assets/views/view-2.webp"
           alt="Background fallback"
           loading="lazy"
         />
@@ -278,7 +284,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('../assets/rooms/room-1.webp')"
+                style="background-image: url('./assets/rooms/room-1.webp')"
               ></div>
               <div class="room-info">
                 <h3>Royal Suite</h3>
@@ -298,7 +304,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('../assets/rooms/room-2.webp')"
+                style="background-image: url('./assets/rooms/room-2.webp')"
               ></div>
               <div class="room-info">
                 <h3>Presidential Suite</h3>
@@ -318,7 +324,7 @@
             <div class="room-card">
               <div
                 class="room-image"
-                style="background-image: url('../assets/rooms/room-3.webp')"
+                style="background-image: url('./assets/rooms/room-3.webp')"
               ></div>
               <div class="room-info">
                 <h3>Celebrity Suite</h3>
@@ -353,23 +359,23 @@
         <div class="slideshow">
           <div
             class="slide active"
-            style="background-image: url('../assets/views/view-1.webp')"
+            style="background-image: url('./assets/views/view-1.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-2.webp')"
+            style="background-image: url('./assets/views/view-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/pool/pool-2.webp')"
+            style="background-image: url('./assets/pool/pool-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-4.webp')"
+            style="background-image: url('./assets/views/view-4.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-5.webp')"
+            style="background-image: url('./assets/views/view-5.webp')"
           ></div>
         </div>
         <div class="slideshow-content">
@@ -396,21 +402,21 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="../assets/gym/gym.webp"
+                src="./assets/gym/gym.webp"
                 alt="Lady running on a treadmill"
                 class="active"
               />
-              <img src="../assets/gym/gym-1.webp" alt="Man flexing his triceps" />
+              <img src="./assets/gym/gym-1.webp" alt="Man flexing his triceps" />
               <img
-                src="../assets/gym/gym-2.webp"
+                src="./assets/gym/gym-2.webp"
                 alt="Lady bending to pick up a bar"
               />
-              <img src="../assets/gym/gym-3.webp" alt="Man on a treadmill" />
+              <img src="./assets/gym/gym-3.webp" alt="Man on a treadmill" />
               <img
-                src="../assets/gym/gym-4.webp"
+                src="./assets/gym/gym-4.webp"
                 alt="Lady benching with a male spotter"
               />
-              <img src="../assets/gym/gym-5.webp" alt="Lady squatting" />
+              <img src="./assets/gym/gym-5.webp" alt="Lady squatting" />
             </div>
             <div class="experience-overlay">
               <h3>World-class Gym</h3>
@@ -430,18 +436,18 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="../assets/spa/spa.webp"
+                src="./assets/spa/spa.webp"
                 alt="Lady enjoying spa treatment"
                 class="active"
               />
               <img
-                src="../assets/spa/spa-1.webp"
+                src="./assets/spa/spa-1.webp"
                 alt="Lady getting a Massage Therapy"
               />
-              <img src="../assets/spa/spa-2.webp" alt="Guy on a facemask" />
-              <img src="../assets/spa/spa-3.webp" alt="Relaxation area" />
-              <img src="../assets/spa/spa-4.webp" alt="Guy getting a Massage" />
-              <img src="../assets/spa/spa-5.webp" alt="Lady getting a Massage" />
+              <img src="./assets/spa/spa-2.webp" alt="Guy on a facemask" />
+              <img src="./assets/spa/spa-3.webp" alt="Relaxation area" />
+              <img src="./assets/spa/spa-4.webp" alt="Guy getting a Massage" />
+              <img src="./assets/spa/spa-5.webp" alt="Lady getting a Massage" />
             </div>
             <div class="experience-overlay">
               <h3>Serenity Spa</h3>
@@ -461,23 +467,23 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="../assets/pool/pool.webp"
+                src="./assets/pool/pool.webp"
                 alt="Lady lying on a pool"
                 class="active"
               />
-              <img src="../assets/pool/pool-1.webp" alt="Lady on private pool" />
-              <img src="../assets/pool/pool-2.webp" alt="Lady doing backstroke" />
+              <img src="./assets/pool/pool-1.webp" alt="Lady on private pool" />
+              <img src="./assets/pool/pool-2.webp" alt="Lady doing backstroke" />
               <img
-                src="../assets/views/view-3-pool-3.webp"
+                src="./assets/views/view-3-pool-3.webp"
                 alt="Lady lying on a poolside"
               />
-              <img src="../assets/pool/pool-4.webp" alt="Man on a pool" />
+              <img src="./assets/pool/pool-4.webp" alt="Man on a pool" />
               <img
-                src="../assets/pool/pool-5.webp"
+                src="./assets/pool/pool-5.webp"
                 alt="Lady on a roof-top pool"
               />
               <img
-                src="../assets/pool/pool-6.webp"
+                src="./assets/pool/pool-6.webp"
                 alt="Lady sipping pineapple juice in a pool"
               />
             </div>
@@ -501,12 +507,12 @@
           <!-- Bar Experience -->
           <div class="experience-card">
             <div class="experience-images">
-              <img src="../assets/bar/bar.webp" alt="Serene bar" class="active" />
-              <img src="../assets/bar/bar-1.webp" alt="Luxury bar" />
-              <img src="../assets/bar/bar-2.webp" alt="Cocktail" />
-              <img src="../assets/bar/bar-3.webp" alt="Bar seating" />
-              <img src="../assets/bar/bar-4.webp" alt="Wine collection" />
-              <img src="../assets/bar/bar-5.webp" alt="Man at a bar" />
+              <img src="./assets/bar/bar.webp" alt="Serene bar" class="active" />
+              <img src="./assets/bar/bar-1.webp" alt="Luxury bar" />
+              <img src="./assets/bar/bar-2.webp" alt="Cocktail" />
+              <img src="./assets/bar/bar-3.webp" alt="Bar seating" />
+              <img src="./assets/bar/bar-4.webp" alt="Wine collection" />
+              <img src="./assets/bar/bar-5.webp" alt="Man at a bar" />
             </div>
             <div class="experience-overlay">
               <h3>The Velvet Lounge</h3>
@@ -526,15 +532,15 @@
           <div class="experience-card">
             <div class="experience-images">
               <img
-                src="../assets/food/pyam.webp"
+                src="./assets/food/pyam.webp"
                 alt="Pounded yam & soup"
                 class="active"
               />
-              <img src="../assets/food/women.webp" alt="2 women" />
-              <img src="../assets/food/egusi.webp" alt="Egusi soup" />
-              <img src="../assets/food/fried-rice.webp" alt="Fried rice" />
-              <img src="../assets/food/jollof.webp" alt="Jollof rice" />
-              <img src="../assets/food/fiesta.webp" alt="Meal presentation" />
+              <img src="./assets/food/women.webp" alt="2 women" />
+              <img src="./assets/food/egusi.webp" alt="Egusi soup" />
+              <img src="./assets/food/fried-rice.webp" alt="Fried rice" />
+              <img src="./assets/food/jollof.webp" alt="Jollof rice" />
+              <img src="./assets/food/fiesta.webp" alt="Meal presentation" />
             </div>
             <div class="experience-overlay">
               <h3>Gourmet Haven</h3>
@@ -559,23 +565,23 @@
         <div class="slideshow">
           <div
             class="slide active"
-            style="background-image: url('../assets/views/view-6-pool-2.webp')"
+            style="background-image: url('./assets/views/view-6-pool-2.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-7.webp')"
+            style="background-image: url('./assets/views/view-7.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-8.webp')"
+            style="background-image: url('./assets/views/view-8.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-9.webp')"
+            style="background-image: url('./assets/views/view-9.webp')"
           ></div>
           <div
             class="slide"
-            style="background-image: url('../assets/views/view-10.webp')"
+            style="background-image: url('./assets/views/view-10.webp')"
           ></div>
         </div>
         <div class="slideshow-content">
@@ -623,16 +629,14 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin, Nigeria</p>
+                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin City, Nigeria</p>
                     <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
                     <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
                 </div>
                 <div class="footer-section">
                     <h3>Our Services</h3>
-                    <!-- <p><a href="hotel.html">Luxury Hotel</a></p> -->
-                    <p><a href="bar.html">Premium Bar</a></p>
                     <p><a href="lounge.html">Elegant Lounge</a></p>
-                    <p><a href="club.html">Exclusive Club</a></p>
+                    <p><a href="club.html">Club Timeless</a></p>
                     <p><a href="rooftop.html">Rooftop Bar</a></p>
                     <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
                 </div>
@@ -655,7 +659,8 @@
       </div>
     </div>
 
-    <script src="../script/script.js"></script>
+    <script src="./script/script.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
 
   </body>
 </html>

@@ -2027,14 +2027,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .preloader {
+    /* .preloader {
         background: radial-gradient(circle, var(--dark), var(--dark), var(--dark), var(--gold)) !important;
     }
         
     .preloader-logo {
         font-size: 2rem !important;
         animation: shine 1.5s linear infinite !important;
-    }
+    } */
 
     section {
         padding: 60px 0;

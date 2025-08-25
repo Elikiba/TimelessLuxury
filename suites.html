@@ -131,30 +131,32 @@
     <link
       rel="icon"
       type="image/png"
-      href="assets/icon/android-chrome-512x512.png"
+      href="./assets/icon/android-chrome-512x512.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icon/apple-touch-icon.png"
+      href="./assets/icon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icon/favicon-32x32.png"
+      href="./assets/icon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/icon/favicon-16x16.png"
+      href="./assets/icon/favicon-16x16.png"
     />
 
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="./site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/venues.css">
 
     <!-- Flatpickr CSS -->
     <link
@@ -194,16 +196,18 @@
   </style>
 
   <body>
-    <!-- Promo banner -->
-    <!-- <div class="promo-banner">
-      <div class="promo-content">
-        <span class="promo-text"
-          >Special Offer: Get 20% off on all suites this season! Use code
-          <strong>SERENE20</strong></span
-        >
-        <button class="close-promo">&times;</button>
-      </div> -->
+   
+     <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">TL</div>
+            <h2>Timeless Luxury</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
     </div>
+
 
     <!-- Scroll Progress Bar -->
     <div id="scroll-to-top">
@@ -211,11 +215,7 @@
       <div class="progress-bar"></div>
     </div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="preloader-logo">Timeless Luxury</div>
-    </div>
-
+   
     <!-- Header -->
     <header id="header">
       <div class="container header-container">
@@ -580,38 +580,39 @@
     </a>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Timeless Luxury</h3>
-                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences under one roof.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook"></i></a>
+     <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Timeless Luxury</h3>
+                        <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+                            <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
+                              <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin City, Nigeria</p>
+                        <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
+                        <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Our Services</h3>
+                        <p><a href="hotel.html">Luxury Hotel</a></p>
+                        <!-- <p><a href="bar.html">Premium Bar</a></p> -->
+                        <p><a href="lounge.html">Elegant Lounge</a></p>
+                        <p><a href="club.html">Exclusive Club</a></p>
+                        <p><a href="rooftop.html">Rooftop Bar</a></p>
+                        <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 63, Ihama road, GRA, Benin, Nigeria</p>
-                    <p><i class="fas fa-phone"></i> 0708 613 7054</p>
-                    <p><i class="fab fa-whatsapp"></i> 07086137054</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Services</h3>
-                    <p><a href="hotel.html">Luxury Hotel</a></p>
-                    <p><a href="bar.html">Premium Bar</a></p>
-                    <p><a href="lounge.html">Elegant Lounge</a></p>
-                    <p><a href="club.html">Exclusive Club</a></p>
-                    <p><a href="rooftop.html">Rooftop Bar</a></p>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
     <!-- Virtual tour -->
     <div class="virtual-tour-overlay">
@@ -630,6 +631,8 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script/script.js"></script>
+    <!-- <script src="./script/main.js"></script> -->
+    <!-- <script src="./script/index.js"></script> -->
   </body>
 </html>

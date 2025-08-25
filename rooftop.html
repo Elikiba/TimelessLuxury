@@ -222,24 +222,7 @@
         </div>
     </footer>
 
-    <script src="../script/main.js"></script>
-    <script>
-    // Scroll to Top Button Functionality
-    const scrollToTopBtn = document.getElementById('scroll-to-top');
-    const progressBar = scrollToTopBtn.querySelector('.progress-bar');
-    window.addEventListener('scroll', () => {
-        const scrollHeight = document.documentElement.scrollHeight;
-        const clientHeight = document.documentElement.clientHeight;
-        const scrollPosition = window.scrollY;
-        const scrollPercentage = (scrollPosition / (scrollHeight - clientHeight)) * 100;
-        const show = scrollPosition > 300;
-        scrollToTopBtn.style.opacity = show ? '1' : '0';
-        scrollToTopBtn.style.visibility = show ? 'visible' : 'hidden';
-        progressBar.style.height = `${scrollPercentage}%`;
-    });
-    scrollToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-    </script>
+    <script src="./script/main.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>

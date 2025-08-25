@@ -6,6 +6,35 @@
     <title>Timeless Luxury - Exclusive Club Experience</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icon/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icon/favicon-16x16.png"
+    />
+
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-- CSS -->
+     <link rel="stylesheet" href="./styles/global.css">
+     <link rel="stylesheet" href="./styles/venues.css">
     <style>
         :root {
             --gold: #FFDF00;
@@ -33,79 +62,7 @@
             font-family: 'Playfair Display', serif;
         }
 
-        /* Preloader */
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, var(--dark) 0%, var(--light-dark) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10000;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
 
-        .preloader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .preloader-content {
-            text-align: center;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .preloader-logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(45deg, var(--gold), var(--dark-gold));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--dark);
-            margin: 0 auto 1rem;
-            animation: spin 2s linear infinite;
-        }
-
-        .preloader h2 {
-            color: var(--gold);
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .loading-bar {
-            width: 200px;
-            height: 4px;
-            background: rgba(255, 223, 0, 0.2);
-            border-radius: 2px;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .loading-progress {
-            height: 100%;
-            background: linear-gradient(90deg, var(--gold), var(--dark-gold));
-            border-radius: 2px;
-            animation: loadProgress 3s ease-in-out;
-        }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        @keyframes loadProgress {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
 
         /* Navigation */
         nav {
@@ -599,6 +556,7 @@
     </style>
 </head>
 <body>
+
     <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
@@ -609,6 +567,14 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-to-top">
+      <i class="fas fa-chevron-up"></i>
+      <div class="progress-bar"></div>
+    </div>
+
 
     <!-- Particles Background -->
     <div class="particles" id="particles"></div>
@@ -622,9 +588,13 @@
             </a>
             <ul class="nav-menu">
                 <li><a href="#" onclick="showPage('home')">Home</a></li>
-                <li><a href="#" onclick="showPage('rooftop')">Rooftop Bar</a></li>
-                <li><a href="#" onclick="showPage('restaurant')">Restaurant</a></li>
-                <li><a href="#" onclick="showPage('bar')">Luxury Bar</a></li>
+                <li><a href="rooftop.html" onclick="showPage('rooftop')">Rooftop Bar</a></li>
+                <li><a href="restaurant.html" onclick="showPage('restaurant')">Restaurant</a></li>
+                <li><a href="lounge.html" onclick="showPage('lounge')">Luxury Lounge</a></li>
+                <li><a href="club.html" onclick="showPage('club')">Club</a></li>
+                <li><a href="hotel.html" onclick="showPage('hotel')">Hotel</a></li>
+                <li><a href="about.html" onclick="showPage('about')">About</a></li>
+
             </ul>
         </div>
     </nav>
@@ -633,7 +603,7 @@
     <div id="home" class="page active">
         <section class="hero">
             <div class="hero-content">
-                <h1>Timeless Luxury</h1>
+                <h1>Club Timeless</h1>
                 <p>Experience the pinnacle of sophistication in our exclusive club, where luxury meets perfection and memories are crafted to last forever.</p>
                 <a href="#" class="cta-button" onclick="showPage('rooftop')">Explore Our World</a>
             </div>
@@ -672,17 +642,17 @@
                 <div class="card scroll-animation">
                     <h3>Sky Lounge Experience</h3>
                     <p>Enjoy panoramic city views while sipping expertly crafted cocktails. Our rooftop terrace offers an unparalleled atmosphere for intimate gatherings and special celebrations.</p>
-                    <div class="card-price">Starting at $45</div>
+                    <div class="card-price">Starting at ₦5,000</div>
                 </div>
                 <div class="card scroll-animation">
                     <h3>Premium Cocktail Menu</h3>
                     <p>Our signature cocktails feature rare spirits, artisanal mixers, and exotic garnishes. Each drink is a masterpiece crafted by award-winning bartenders.</p>
-                    <div class="card-price">$18 - $35</div>
+                    <div class="card-price">₦15,000 - ₦35,000</div>
                 </div>
                 <div class="card scroll-animation">
                     <h3>Private Sky Cabanas</h3>
                     <p>Reserve your own private cabana with dedicated service, premium bottle service, and exclusive access to our VIP menu selections.</p>
-                    <div class="card-price">$500 minimum</div>
+                    <div class="card-price">₦500,000 minimum</div>
                 </div>
             </div>
 
@@ -821,434 +791,43 @@
     </a>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h3>Timeless Luxury</h3>
-            <p>Where sophistication meets excellence, and every moment becomes a cherished memory.</p>
-            <div class="social-links">
-                <a href="#">📘</a>
-                <a href="#">📷</a>
-                <a href="#">🐦</a>
-                <a href="#">📧</a>
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Timeless Luxury</h3>
+                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
+                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
+                    <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p><a href="hotel.html">Luxury Hotel</a></p>
+                    <p><a href="bar.html">Premium Bar</a></p>
+                    <p><a href="lounge.html">Elegant Lounge</a></p>
+                    <p><a href="club.html">Exclusive Club</a></p>
+                    <p><a href="rooftop.html">Rooftop Bar</a></p>
+                    <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
+                </div>
             </div>
-            <p>&copy; 2025 Timeless Luxury. All rights reserved. | Reservations: +1 (555) 123-LUXURY</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Preloader
-        window.addEventListener('load', function() {
-            const preloader = document.getElementById('preloader');
-            setTimeout(() => {
-                preloader.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-                // Initialize animations after preloader
-                setTimeout(() => {
-                    initScrollAnimations();
-                    initTypingEffect();
-                    initParallaxEffect();
-                }, 500);
-            }, 3000);
-        });
-
-        // Initially hide overflow during loading
-        document.body.style.overflow = 'hidden';
-        // Page Navigation
-        function showPage(pageId) {
-            // Hide all pages
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
-            
-            // Show selected page
-            document.getElementById(pageId).classList.add('active');
-            
-            // Scroll to top
-            window.scrollTo(0, 0);
-            
-            // Re-initialize scroll animations
-            setTimeout(initScrollAnimations, 100);
-        }
-
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // Scroll animations
-        function initScrollAnimations() {
-            const scrollElements = document.querySelectorAll('.scroll-animation');
-            
-            const elementInView = (el, dividend = 1) => {
-                const elementTop = el.getBoundingClientRect().top;
-                return (
-                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-                );
-            };
-
-            const elementOutofView = (el) => {
-                const elementTop = el.getBoundingClientRect().top;
-                return (
-                    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-                );
-            };
-
-            const displayScrollElement = (element) => {
-                element.classList.add('animate');
-            };
-
-            const hideScrollElement = (element) => {
-                element.classList.remove('animate');
-            };
-
-            const handleScrollAnimation = () => {
-                scrollElements.forEach((el) => {
-                    if (elementInView(el, 1.25)) {
-                        displayScrollElement(el);
-                    } else if (elementOutofView(el)) {
-                        hideScrollElement(el);
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', handleScrollAnimation);
-            handleScrollAnimation(); // Initial check
-        }
-
-        // Particle system
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = 50;
-
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                // Random position
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                
-                // Random animation delay
-                particle.style.animationDelay = Math.random() * 6 + 's';
-                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
-                
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        // Interactive card hover effects
-        function initCardEffects() {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-15px) rotateX(5deg)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) rotateX(0)';
-                });
-            });
-        }
-
-        // Gallery interactive effects
-        function initGalleryEffects() {
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            galleryItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    this.style.animation = 'pulse 0.6s ease';
-                    setTimeout(() => {
-                        this.style.animation = '';
-                    }, 600);
-                });
-            });
-        }
-
-        // Smooth scroll for CTA button
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctaButton = document.querySelector('.cta-button');
-            if (ctaButton) {
-                ctaButton.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    showPage('rooftop');
-                });
-            }
-        });
-
-        // Initialize everything when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            createParticles();
-            initScrollAnimations();
-            initCardEffects();
-            initGalleryEffects();
-            
-            // Add some dynamic effects
-            setInterval(() => {
-                const particles = document.querySelectorAll('.particle');
-                particles.forEach(particle => {
-                    if (Math.random() > 0.98) {
-                        particle.style.opacity = Math.random() * 0.8 + 0.2;
-                    }
-                });
-            }, 2000);
-        });
-
-        // Add pulse animation keyframes
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes pulse {
-                0% { transform: scale(1); }
-                50% { transform: scale(1.1); }
-                100% { transform: scale(1); }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Mobile menu toggle (for responsive design)
-        function initMobileMenu() {
-            const navMenu = document.querySelector('.nav-menu');
-            const menuButton = document.createElement('button');
-            menuButton.innerHTML = '☰';
-            menuButton.className = 'mobile-menu-btn';
-            menuButton.style.cssText = `
-                display: none;
-                background: none;
-                border: none;
-                color: var(--gold);
-                font-size: 1.5rem;
-                cursor: pointer;
-            `;
-
-            // Add mobile styles
-            const mobileStyle = document.createElement('style');
-            mobileStyle.textContent = `
-                @media (max-width: 768px) {
-                    .mobile-menu-btn {
-                        display: block !important;
-                    }
-                    .nav-menu {
-                        display: none;
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        width: 100%;
-                        background: rgba(2, 3, 53, 0.95);
-                        backdrop-filter: blur(20px);
-                        flex-direction: column;
-                        padding: 1rem;
-                        border-top: 1px solid rgba(255, 223, 0, 0.2);
-                    }
-                    .nav-menu.active {
-                        display: flex !important;
-                    }
-                    .nav-menu li {
-                        margin: 0.5rem 0;
-                    }
-                }
-            `;
-            document.head.appendChild(mobileStyle);
-
-            menuButton.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-            });
-
-            document.querySelector('.nav-container').appendChild(menuButton);
-        }
-
-        // Enhanced loading animation
-        function initLoadingAnimation() {
-            const body = document.body;
-            body.style.opacity = '0';
-            
-            window.addEventListener('load', () => {
-                setTimeout(() => {
-                    body.style.transition = 'opacity 1s ease-in-out';
-                    body.style.opacity = '1';
-                }, 100);
-            });
-        }
-
-        // Initialize mobile menu
-        initMobileMenu();
-        initLoadingAnimation();
-
-        // Add floating elements animation
-        function createFloatingElements() {
-            const floatingContainer = document.createElement('div');
-            floatingContainer.className = 'floating-elements';
-            floatingContainer.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-                z-index: -1;
-            `;
-
-            for (let i = 0; i < 10; i++) {
-                const element = document.createElement('div');
-                element.style.cssText = `
-                    position: absolute;
-                    width: ${Math.random() * 100 + 50}px;
-                    height: 2px;
-                    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-                    opacity: 0.1;
-                    animation: floatAcross ${Math.random() * 20 + 10}s linear infinite;
-                    top: ${Math.random() * 100}%;
-                    left: -100px;
-                `;
-                floatingContainer.appendChild(element);
-            }
-
-            document.body.appendChild(floatingContainer);
-
-            // Add floating animation
-            const floatingStyle = document.createElement('style');
-            floatingStyle.textContent = `
-                @keyframes floatAcross {
-                    from {
-                        transform: translateX(-100px);
-                        opacity: 0;
-                    }
-                    50% {
-                        opacity: 0.3;
-                    }
-                    to {
-                        transform: translateX(calc(100vw + 100px));
-                        opacity: 0;
-                    }
-                }
-            `;
-            document.head.appendChild(floatingStyle);
-        }
-
-        // Initialize floating elements
-        setTimeout(createFloatingElements, 2000);
-
-        // Add typing effect for hero text
-        function initTypingEffect() {
-            const heroTitle = document.querySelector('.hero h1');
-            if (heroTitle) {
-                const text = heroTitle.textContent;
-                heroTitle.textContent = '';
-                heroTitle.style.borderRight = '3px solid var(--gold)';
-                
-                let i = 0;
-                const typeWriter = () => {
-                    if (i < text.length) {
-                        heroTitle.textContent += text.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, 100);
-                    } else {
-                        setTimeout(() => {
-                            heroTitle.style.borderRight = 'none';
-                        }, 1000);
-                    }
-                };
-                
-                setTimeout(typeWriter, 1500);
-            }
-        }
-
-        // Add parallax effect
-        function initParallaxEffect() {
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const hero = document.querySelector('.hero');
-                if (hero) {
-                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-                }
-                
-                const particles = document.querySelectorAll('.particle');
-                particles.forEach((particle, index) => {
-                    const speed = (index % 3 + 1) * 0.1;
-                    particle.style.transform = `translateY(${scrolled * speed}px)`;
-                });
-            });
-        }
-
-        // Initialize effects with delay
-        setTimeout(() => {
-            initTypingEffect();
-            initParallaxEffect();
-        }, 1000);
-
-        // Add interactive logo animation
-        const logo = document.querySelector('.logo');
-        if (logo) {
-            logo.addEventListener('mouseenter', function() {
-                const logoIcon = this.querySelector('.logo-icon');
-                logoIcon.style.animation = 'rotate 0.8s ease-in-out';
-            });
-            
-            logo.addEventListener('animationend', function() {
-                const logoIcon = this.querySelector('.logo-icon');
-                logoIcon.style.animation = '';
-            });
-        }
-
-        // Add rotate animation
-        const rotateStyle = document.createElement('style');
-        rotateStyle.textContent = `
-            @keyframes rotate {
-                from { transform: rotate(0deg); }
-                to { transform: rotate(360deg); }
-            }
-        `;
-        document.head.appendChild(rotateStyle);
-
-        // Enhanced card interactions
-        function enhanceCardInteractions() {
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    // Create ripple effect
-                    const ripple = document.createElement('div');
-                    ripple.style.cssText = `
-                        position: absolute;
-                        border-radius: 50%;
-                        background: rgba(255, 223, 0, 0.3);
-                        transform: scale(0);
-                        animation: ripple 0.6s linear;
-                        pointer-events: none;
-                    `;
-                    
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    ripple.style.width = ripple.style.height = size + 'px';
-                    ripple.style.left = '50%';
-                    ripple.style.top = '50%';
-                    ripple.style.transform = 'translate(-50%, -50%) scale(0)';
-                    
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
-            });
-        }
-
-        // Add ripple animation
-        const rippleStyle = document.createElement('style');
-        rippleStyle.textContent = `
-            @keyframes ripple {
-                to {
-                    transform: translate(-50%, -50%) scale(2);
-                    opacity: 0;
-                }
-            }
-        `;
-        document.head.appendChild(rippleStyle);
-
-        // Initialize enhanced interactions
-        setTimeout(enhanceCardInteractions, 500);
-    </script>
+    <script src="script/index.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/index.js"></script>
+    
 </body>
 </html>

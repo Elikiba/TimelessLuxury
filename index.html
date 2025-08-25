@@ -479,27 +479,7 @@
             color: var(--dark);
         }
 
-        /* Map Section */
-        .map-section {
-            padding: 80px 0;
-            background: var(--white);
-        }
-
-        .map-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
-
-
+        
 
         /* Footer */
         footer {
@@ -629,12 +609,7 @@
 
 <body>
 
-    <!-- Scroll Progress Bar -->
-    <div id="scroll-to-top">
-      <i class="fas fa-chevron-up"></i>
-      <div class="progress-bar"></div>
-    </div>
-
+    <!-- Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
             <div class="preloader-logo">TL</div>
@@ -644,6 +619,14 @@
             </div>
         </div>
     </div>
+
+    
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-to-top">
+      <i class="fas fa-chevron-up"></i>
+      <div class="progress-bar"></div>
+    </div>
+
 
     <!-- Header -->
     <header id="header">
@@ -655,15 +638,14 @@
                 <span class="menu-bar bottom-bar"></span>
             </button>
             <nav id="nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="hotel.html">Hotel</a></li>
-                    <li><a href="restaurant.html">Restaurant</a></li>
-                    <li><a href="bar.html">Bar</a></li>
-                    <li><a href="lounge.html">Lounge</a></li>
-                    <li><a href="club.html">Club</a></li>
-                    <li><a href="rooftop.html">Rooftop</a></li>
-                    <li><a href="#about">About</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="rooftop.html" onclick="showPage('rooftop')">Rooftop Bar</a></li>
+                    <li><a href="restaurant.html" onclick="showPage('restaurant')">Restaurant</a></li>
+                    <li><a href="lounge.html" onclick="showPage('lounge')">Lounge</a></li>
+                    <li><a href="club.html" onclick="showPage('club')">Club</a></li>
+                    <li><a href="hotel.html" onclick="showPage('hotel')">Hotel</a></li>
+                    <li><a href="about.html" onclick="showPage('about')">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -673,7 +655,7 @@
     <section class="hero" id="home">
         <video autoplay muted loop playsinline class="hero-video">
             <source src="../assets/videos/serenity.webm" type="video/webm" />
-            <img src="../assets/views/view-2.webp" alt="Background fallback" />
+            <img src="assets/hero-1.jpg" alt="Background fallback" />
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -720,7 +702,7 @@
                 </div>
                 
                 <div class="about-image">
-                    <img src="../assets/views/view-4.webp" alt="Timeless Luxury Interior">
+                    <img src="assets/hero.jpg" alt="Timeless Luxury Interior">
                 </div>
             </div>
 
@@ -757,16 +739,6 @@
                     </div>
                 </div>
 
-                <!-- Bar -->
-                <div class="service-card" onclick="location.href='bar.html'">
-                    <img src="../assets/bar/bar.webp" alt="Premium Bar">
-                    <div class="service-overlay">
-                        <h3>Bar</h3>
-                        <p>Sophisticated cocktails and premium spirits in an elegant atmosphere perfect for intimate conversations.</p>
-                        <a href="bar.html" class="btn">Visit Bar</a>
-                    </div>
-                </div>
-
                 <!-- Lounge -->
                 <div class="service-card" onclick="location.href='lounge.html'">
                     <img src="../assets/views/view-4.webp" alt="Elegant Lounge">
@@ -779,7 +751,7 @@
 
                 <!-- Club -->
                 <div class="service-card" onclick="location.href='club.html'">
-                    <img src="../assets/views/view-7.webp" alt="Exclusive Club">
+                    <img src="assets/club-night.jpg" alt="Exclusive Club">
                     <div class="service-overlay">
                         <h3>Club</h3>
                         <p>Dance the night away with world-class DJs, premium bottle service, and VIP experiences.</p>
@@ -824,39 +796,38 @@
     </a>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Timeless Luxury</h3>
-                    <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
-                        <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
-                        <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Timeless Luxury</h3>
+                        <p>Benin's premier destination for luxury hospitality, offering five unique experiences in two exquisite locations in Benin City.</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/timelessluxurybenincity" target="_blank"><i class="fab fa-instagram" style="color: #E4405F;"></i></a>
+                            <a href="https://vt.tiktok.com/ZSSoeafyb" target="_blank"><i class="fab fa-tiktok" style="color: #010101;"></i></a>
+                            <a href="https://facebook.com/TimelessLuxuryNG" target="_blank"><i class="fab fa-facebook" style="color: #1877F3;"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin City, Nigeria</p>
+                        <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
+                        <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Our Services</h3>
+                        <p><a href="hotel.html">Luxury Hotel</a></p>
+                        <p><a href="lounge.html">Elegant Lounge</a></p>
+                        <p><a href="club.html">Club Timeless</a></p>
+                        <p><a href="rooftop.html">Rooftop Bar</a></p>
+                        <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> &nbsp; 63, Ihama road, GRA, Benin, Nigeria</p>
-                    <p><i class="fas fa-phone"></i> &nbsp; 0708 613 7054</p>
-                    <p><i class="fab fa-whatsapp"></i> &nbsp; 07086137054</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Our Services</h3>
-                    <p><a href="hotel.html">Luxury Hotel</a></p>
-                    <p><a href="bar.html">Premium Bar</a></p>
-                    <p><a href="lounge.html">Elegant Lounge</a></p>
-                    <p><a href="club.html">Exclusive Club</a></p>
-                    <p><a href="rooftop.html">Rooftop Bar</a></p>
-                    <p><a href="restaurant.html">Fine Dining Restaurant</a></p>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Timeless Luxury | Designed by Elikiba&trade;</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
     <script>
         // Header Scroll Effect
@@ -953,5 +924,6 @@
         }
     </script>
     <script src="./script/script.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
 </body>
 </html>
